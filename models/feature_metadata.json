@@ -1,0 +1,318 @@
+{
+  "diabetes": {
+    "raw_features": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age"
+    ],
+    "ranges": {
+      "Pregnancies": {
+        "min": 0,
+        "max": 20,
+        "default": 0,
+        "step": 1,
+        "type": "int"
+      },
+      "Glucose": {
+        "min": 40,
+        "max": 300,
+        "default": 100,
+        "step": 1,
+        "type": "float",
+        "unit": "mg/dL"
+      },
+      "BloodPressure": {
+        "min": 40,
+        "max": 220,
+        "default": 75,
+        "step": 1,
+        "type": "float",
+        "unit": "mmHg"
+      },
+      "SkinThickness": {
+        "min": 5,
+        "max": 99,
+        "default": 20,
+        "step": 1,
+        "type": "float",
+        "unit": "mm"
+      },
+      "Insulin": {
+        "min": 0,
+        "max": 900,
+        "default": 80,
+        "step": 1,
+        "type": "float",
+        "unit": "mu U/ml"
+      },
+      "BMI": {
+        "min": 10.0,
+        "max": 65.0,
+        "default": 24.5,
+        "step": 0.1,
+        "type": "float",
+        "unit": "kg/m\u00b2"
+      },
+      "DiabetesPedigreeFunction": {
+        "min": 0.05,
+        "max": 2.5,
+        "default": 0.47,
+        "step": 0.01,
+        "type": "float"
+      },
+      "Age": {
+        "min": 18,
+        "max": 100,
+        "default": 35,
+        "step": 1,
+        "type": "int",
+        "unit": "years"
+      }
+    }
+  },
+  "heart": {
+    "raw_features": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "ranges": {
+      "age": {
+        "min": 18,
+        "max": 100,
+        "default": 50,
+        "step": 1,
+        "type": "int",
+        "unit": "years"
+      },
+      "sex": {
+        "options": {
+          "Female": 0,
+          "Male": 1
+        },
+        "default": 1,
+        "type": "categorical"
+      },
+      "cp": {
+        "options": {
+          "Typical Angina (0)": 0,
+          "Atypical Angina (1)": 1,
+          "Non-anginal Pain (2)": 2,
+          "Asymptomatic (3)": 3
+        },
+        "default": 0,
+        "type": "categorical"
+      },
+      "trestbps": {
+        "min": 80,
+        "max": 220,
+        "default": 120,
+        "step": 1,
+        "type": "int",
+        "unit": "mmHg"
+      },
+      "chol": {
+        "min": 100,
+        "max": 600,
+        "default": 210,
+        "step": 1,
+        "type": "int",
+        "unit": "mg/dL"
+      },
+      "fbs": {
+        "options": {
+          "Fasting Blood Sugar <= 120 mg/dL (0)": 0,
+          "Fasting Blood Sugar > 120 mg/dL (1)": 1
+        },
+        "default": 0,
+        "type": "categorical"
+      },
+      "restecg": {
+        "options": {
+          "Normal (0)": 0,
+          "ST-T Wave Abnormality (1)": 1,
+          "Left Ventricular Hypertrophy (2)": 2
+        },
+        "default": 0,
+        "type": "categorical"
+      },
+      "thalach": {
+        "min": 60,
+        "max": 220,
+        "default": 150,
+        "step": 1,
+        "type": "int",
+        "unit": "bpm"
+      },
+      "exang": {
+        "options": {
+          "No (0)": 0,
+          "Yes (1)": 1
+        },
+        "default": 0,
+        "type": "categorical"
+      },
+      "oldpeak": {
+        "min": 0.0,
+        "max": 7.0,
+        "default": 1.0,
+        "step": 0.1,
+        "type": "float",
+        "unit": "mm"
+      },
+      "slope": {
+        "options": {
+          "Upsloping (0)": 0,
+          "Flat (1)": 1,
+          "Downsloping (2)": 2
+        },
+        "default": 1,
+        "type": "categorical"
+      },
+      "ca": {
+        "min": 0,
+        "max": 4,
+        "default": 0,
+        "step": 1,
+        "type": "int"
+      },
+      "thal": {
+        "options": {
+          "Normal (1)": 1,
+          "Fixed Defect (2)": 2,
+          "Reversible Defect (3)": 3
+        },
+        "default": 2,
+        "type": "categorical"
+      }
+    }
+  },
+  "hypertension": {
+    "raw_features": [
+      "male",
+      "age",
+      "currentSmoker",
+      "cigsPerDay",
+      "BPMeds",
+      "totChol",
+      "sysBP",
+      "diaBP",
+      "BMI",
+      "heartRate",
+      "glucose",
+      "diabetes"
+    ],
+    "ranges": {
+      "male": {
+        "options": {
+          "Female": 0,
+          "Male": 1
+        },
+        "default": 1,
+        "type": "categorical"
+      },
+      "age": {
+        "min": 18,
+        "max": 100,
+        "default": 45,
+        "step": 1,
+        "type": "int",
+        "unit": "years"
+      },
+      "currentSmoker": {
+        "options": {
+          "Non-Smoker (0)": 0,
+          "Current Smoker (1)": 1
+        },
+        "default": 0,
+        "type": "categorical"
+      },
+      "cigsPerDay": {
+        "min": 0,
+        "max": 70,
+        "default": 0,
+        "step": 1,
+        "type": "int"
+      },
+      "BPMeds": {
+        "options": {
+          "Not on Blood Pressure Meds (0)": 0,
+          "On Blood Pressure Meds (1)": 1
+        },
+        "default": 0,
+        "type": "categorical"
+      },
+      "totChol": {
+        "min": 100,
+        "max": 600,
+        "default": 200,
+        "step": 1,
+        "type": "int",
+        "unit": "mg/dL"
+      },
+      "sysBP": {
+        "min": 80,
+        "max": 240,
+        "default": 120,
+        "step": 1,
+        "type": "float",
+        "unit": "mmHg"
+      },
+      "diaBP": {
+        "min": 40,
+        "max": 150,
+        "default": 80,
+        "step": 1,
+        "type": "float",
+        "unit": "mmHg"
+      },
+      "BMI": {
+        "min": 10.0,
+        "max": 65.0,
+        "default": 24.5,
+        "step": 0.1,
+        "type": "float",
+        "unit": "kg/m\u00b2"
+      },
+      "heartRate": {
+        "min": 40,
+        "max": 180,
+        "default": 72,
+        "step": 1,
+        "type": "float",
+        "unit": "bpm"
+      },
+      "glucose": {
+        "min": 40,
+        "max": 400,
+        "default": 85,
+        "step": 1,
+        "type": "float",
+        "unit": "mg/dL"
+      },
+      "diabetes": {
+        "options": {
+          "Non-Diabetic (0)": 0,
+          "Diabetic (1)": 1
+        },
+        "default": 0,
+        "type": "categorical"
+      }
+    }
+  }
+}
